@@ -7,15 +7,8 @@ public class SouGouInput {
 
     private AbstractSkin skin;
 
-    public AbstractSkin getSkin() {
-        return skin;
-    }
-
+    // aggregation
     public void setSkin(AbstractSkin skin) {
-        this.skin = skin;
-    }
-
-    public SouGouInput(AbstractSkin skin) {
         this.skin = skin;
     }
 
