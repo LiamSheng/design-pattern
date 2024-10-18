@@ -2,40 +2,40 @@ package com.linzi.principles.dependency_inversion_principle;
 
 public class Computer {
 
-    private XiJieHardDisk xiJieHardDisk;
-    private IntelCPU intelCPU;
-    private KingstonMemory kingstonMemory;
+    private HardDisk hardDisk;
+    private CPU cpu;
+    private Memory memory;
 
-    public XiJieHardDisk getXiJieHardDisk() {
-        return xiJieHardDisk;
+    public HardDisk getHardDisk() {
+        return hardDisk;
     }
 
-    public void setXiJieHardDisk(XiJieHardDisk xiJieHardDisk) {
-        this.xiJieHardDisk = xiJieHardDisk;
+    public void setHardDisk(HardDisk hardDisk) {
+        this.hardDisk = hardDisk;
     }
 
-    public IntelCPU getIntelCPU() {
-        return intelCPU;
+    public CPU getCpu() {
+        return cpu;
     }
 
-    public void setIntelCPU(IntelCPU intelCPU) {
-        this.intelCPU = intelCPU;
+    public void setCpu(CPU cpu) {
+        this.cpu = cpu;
     }
 
-    public KingstonMemory getKingstonMemory() {
-        return kingstonMemory;
+    public Memory getMemory() {
+        return memory;
     }
 
-    public void setKingstonMemory(KingstonMemory kingstonMemory) {
-        this.kingstonMemory = kingstonMemory;
+    public void setMemory(Memory memory) {
+        this.memory = memory;
     }
 
     public void run() {
         System.out.println("Computer is running");
-        String data = this.xiJieHardDisk.get();
+        String data = this.hardDisk.get();
         System.out.println("希捷硬盘上的数据: " + data);
-        intelCPU.run();
-        kingstonMemory.save();
+        cpu.run();
+        memory.save();
     }
 
 }

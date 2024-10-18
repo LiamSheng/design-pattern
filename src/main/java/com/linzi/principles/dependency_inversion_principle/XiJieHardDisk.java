@@ -1,6 +1,6 @@
 package com.linzi.principles.dependency_inversion_principle;
 
-public class XiJieHardDisk {
+public class XiJieHardDisk implements HardDisk {
 
     public void save(String data) {
         System.out.println("希捷硬盘存储数据: " + data);
