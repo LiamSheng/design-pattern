@@ -1,6 +1,6 @@
 package com.linzi.principles.lsp;
 
-public class Square extends Rectangle {
+public class NonLSPComliantSquare extends Rectangle {
 
     @Override
     public void setWidth(double width) {
